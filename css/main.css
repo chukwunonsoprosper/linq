@@ -1,0 +1,378 @@
+* {
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: manrope;
+}
+
+#secondmobile {
+    display: none;
+}
+
+
+
+span {
+    font-size: 90%;
+}
+
+body {
+    margin: 0;
+    padding: 15px 50px;
+}
+
+
+
+@font-face {
+    font-family: manrope;
+    src: url(/font/Manrope/Manrope-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: darker;
+    src: url(/font/Darker_Grotesque/DarkerGrotesque-VariableFont_wght.ttf);
+}
+
+
+.heading {
+    width: 100%;
+    background: linear-gradient(to right, rgba(211, 211, 211, 0.467), rgba(85, 162, 239, 0.434));
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.heading .thecontent {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.thecontent .name span {
+    font-family: manrope;
+    font-weight: 800;
+    background: linear-gradient(to right, red, blue);
+    letter-spacing: 7px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.thecontent .othersidemenu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.thecontent .othersidemenu input {
+    padding: 10px;
+    margin-right: 15px;
+    width: 300px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-family: manrope;
+}
+
+.thecontent .othersidemenu span {
+    font-family: manrope;
+    font-weight: 800;
+    padding: 5px 15px;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    display: block;
+}
+
+.thecontent .othersidemenu span:hover {
+    background-color: rgb(229, 249, 255);
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+}
+
+.thebody {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+
+.thebody .linqcontent {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.errorandgood {
+    font-family: manrope;
+    margin-top: 20px;
+    color: red;
+    text-align: center;
+}
+
+.thethreeside {
+    background-color: rgba(211, 211, 211, 0.467);
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+
+.thethreeside:first-child {
+    width: 22%;
+    overflow: hidden;
+        height: 530px;
+    overflow-y: scroll;
+}
+
+.thethreeside:nth-child(2) {
+    width: 50%;
+    padding: unset;
+        height: 530px;
+}
+
+.thethreeside:nth-child(3) {
+    width: 26%;
+    height: 300px;
+    position: relative;
+}
+
+.thethreeside .head {
+    background-color: black;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.thethreeside .head span {
+    width: 100%;
+    text-align: left;
+    font-weight: 700;
+    font-family: manrope;
+    font-size: 15px;
+    background: linear-gradient(to right, red, blue);
+    letter-spacing: 7px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.thethreeside .about {
+    background-color: rgb(251, 250, 250);
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.thethreeside .about span {
+    font-family: manrope;
+    font-size: 30px;
+    font-weight: bold;
+    background: linear-gradient(to right, red, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.thethreeside .about p {
+    font-family: darker;
+    font-weight: 500;
+    color: black;
+}
+
+.theotherside {
+    padding: 10px;
+}
+
+.theotherside .thelinkformation {
+    display: block;
+}
+
+.thelinkformation .tellthemsmg span {
+    font-family: manrope;
+    font-size: 20px;
+    font-weight: 800;
+    color: #121212;
+}
+
+.thelinkformation .tellthemsmg p {
+    font-family: darker;
+    font-weight: 500;
+}
+
+.twoinput {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.twoinput input {
+    border-radius: 10px;
+    font-family: manrope;
+    color: black;
+    padding: 12px;
+    transition: 0.5s ease-in-out;
+}
+
+.twoinput input:first-child {
+    width: 28%;
+    color: dodgerblue;
+    font-weight: 600;
+    border: 2px solid rgba(85, 162, 239, 0.283);
+}
+
+.twoinput input:last-child {
+    width: 70%;
+    border: none;
+    outline: none;
+}
+
+.twoinput input:last-child:focus {
+    border: 2px solid rgba(85, 162, 239, 0.283);
+}
+
+.thelastlinkandbutton {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.thelastlinkandbutton input {
+    border: 2px solid rgba(85, 162, 239, 0.283);
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    outline: none;
+    font-family: manrope;
+}
+
+.customizeto {
+    margin-bottom: 15px;
+    display: block;
+}
+
+.customizeto span {
+    padding: 5px 15px;
+    font-weight: 800;
+    font-size: 20px;
+    font-family: manrope;
+    background-color: rgb(229, 249, 255);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.buildthelink {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buildthelink button {
+    padding: 12px;
+    border-radius: 10px;
+    outline: none;
+    font-family: darker;
+    border: unset;
+    color: white;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+.buildthelink button:first-child {
+    width: 50%;
+    background-color: rgba(85, 162, 239, 0.798);
+}
+
+.buildthelink button:last-child {
+    width: 48%;
+    color: #121212;
+    background-color: rgba(85, 162, 239, 0.387);
+
+}
+
+.thesavelinkpanel {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.thesavelinkpanel .link {
+    padding: 10px;
+    color: #121212;
+    font-family: manrope;
+    font-weight: 500;
+    background-color: rgb(251, 250, 250);
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.newfromlinq {
+    width: 100%;
+}
+
+.newfromlinq p{
+    font-family: manrope;
+    font-weight: 600;
+}
+
+.newfromlinq p span {
+    background: linear-gradient(to right, red, blue);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.writeup span {
+    font-weight: 400;
+    font-family: darker;
+    color: black;
+    font-size: 100%;
+}
+
+.views {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-family: manrope;
+    padding: 5px 20px;
+    background: linear-gradient(to right, red, blue);
+    color: white;
+    border-radius: 10px;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(30, 143, 255, 0.497);
+    top: 50%;
+    border-radius: 100px;
+    border-top: 5px solid transparent;
+    left: 45%;
+    display: none;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    animation: loader 0.4s linear infinite;
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    } 
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.done {
+    padding: 5px 15px;
+    background-color: #121212;
+    color: white;
+    margin-top: 60px;
+    border-radius: 10px;
+}
+

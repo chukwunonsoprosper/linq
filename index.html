@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel='stylesheet' type='text/css' media='screen' href='css/min.css'>
+</head>
+
+<body onload="checkforid()">
+    <div class="heading">
+        <div class="thecontent">
+            <div class="name">
+                <span>LinQ</span>
+            </div>
+
+            <div class="othersidemenu">
+                <input type="search" placeholder="search for saved link...">
+                <span id="firstmobile">&#9776;</span>
+                <span onclick="showside()" id="secondmobile">&#9776;</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="thebody">
+        <div class="linqcontent">
+            <div id="saveid" class="thethreeside">
+                <div class="head">
+                    <span>Saved link</span>
+                </div>
+
+                <div id="thesavelink" class="thesavelinkpanel">
+                    
+
+
+
+                </div>
+            </div>
+
+            <div class="thethreeside">
+                <div class="about">
+                    <span>Welcome to LinQ</span>
+                    <p>Easily transform, long, cumbersome link into concise, personalised URL that reflect your brand...
+                        make your links work harder for you, try linq today and start sharing your customized links with
+                        the world
+                    </p>
+                </div>
+
+                <div class="theotherside">
+                    <div class="thelinkformation">
+                        <div class="tellthemsmg">
+                            <span>Let's get you started 📌</span>
+                            <p>Kindly fill in the details of the link you wish to customized</p>
+                        </div>
+                        <div class="thelastlinkandbutton">
+                            <input id="defaultURL" type="text" autocomplete="off"
+                                placeholder="Enter the url  [https://www.longlink.com/longlinkdescription]">
+                        </div>
+                        <div class="customizeto">
+                            <span>&ShortDownArrow;</span>
+                        </div>
+                        <div class="twoinput">
+                            <input autocomplete="off" type="text" value="https://linq.com/?" disabled>
+                            <input autocomplete="off" id="Name" type="text" placeholder="Enter a short unique string">
+                        </div>
+
+                        <div class="errorandgood">
+                            <span id="error"></span>
+                        </div>
+                        <div class="buildthelink">
+                            <button onclick="linqBuild()">Create link</button>
+                            <button id="clip" onclick="copy()">Copy generated link</button>
+                        </div>
+
+
+
+                        <div class="circle" id="turn"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="thethreeside">
+                <div class="head">
+                    <span>What's new</span>
+                </div>
+
+                <div class="newfromlinq">
+                    <p>From: <span>LinQ</span></p>
+                    <div class="writeup">
+                        <span id="theupdate"></span>
+                    </div>
+                </div>
+
+                <div id="thecount" class="views">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='js/main.js'></script>
+</body>
+
+</html>
+
