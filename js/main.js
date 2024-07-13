@@ -1,7 +1,7 @@
 const linqId = localStorage.getItem('linq');
 
 async function count() {
-    let url = 'http://localhost/linq-backend/';
+    let url = 'https://corsproxy.io/?https://linq.pxxl.space';
 
     try {
         let res = await fetch(url);
@@ -15,7 +15,7 @@ async function count() {
 count()
 
 async function fetchSaveLink() {
-    let url =  `http://localhost/linq-backend/save.php?linq=${linqId}`;
+    let url =  `https://corsproxy.io/?https://linq.pxxl.space/save.php?linq=${linqId}`;
     try {
         let req = await fetch(url);
         if(req.status === 200) {
@@ -64,7 +64,7 @@ function checkforid() {
     //init to send to server
 
     async function sendLink() {
-        let url = `http://localhost/linq-backend/redirect.php?link=${theParam}`;
+        let url = `https://corsproxy.io/?https://linq.pxxl.space/redirect.php?link=${theParam}`;
         try {
             let request = await fetch(url);
             if (request.status == 200) {
@@ -99,7 +99,7 @@ function linqBuild() {
         document.getElementById('turn').style.display = 'block'
         function sendDataToBe() {
             async function sendRes() {
-                let url = `http://localhost/linq-backend/process.php?sessionid=${linqId}&default=${defaultLink}&linkName=${linkName}`;
+                let url = `https://corsproxy.io/?https://linq.pxxl.space/process.php?sessionid=${linqId}&default=${defaultLink}&linkName=${linkName}`;
                 let option = {
                     method: 'GET'
                 }
@@ -136,7 +136,7 @@ function copy() {
 }
 
 async function updates() {
-    let url = 'http://localhost/linq-backend/update.php';
+    let url = 'https://corsproxy.io/?https://linq.pxxl.space/update.php';
 
     try {
         let res = await fetch(url);
