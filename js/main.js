@@ -93,8 +93,8 @@ function linqBuild() {
     try {
         if (linkName == '' && defaultLink == '') { throw 'an error has occur, try checking the input' }
         let pattern = /\s/;
+        if(defaultLink == 'https://') {throw 'provide a link'}
         if (linkName.match(pattern)) { throw "don't include space in the new link" }
-
         //init the function that send's the data to the endpoint
         document.getElementById('turn').style.display = 'block'
         function sendDataToBe() {
