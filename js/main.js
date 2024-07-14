@@ -1,42 +1,5 @@
 const linqId = localStorage.getItem('linq');
 
-async function count() {
-    let url = 'https://corsproxy.io/?https://linq.pxxl.space';
-
-    try {
-        let res = await fetch(url);
-        let req = await res.text()
-        document.getElementById('thecount').innerHTML = req;
-    } catch (error) {
-        console.log(error);
-    }
-}
-
-count()
-
-async function fetchSaveLink() {
-    let url =  `https://corsproxy.io/?https://linq.pxxl.space/save.php?linq=${linqId}`;
-    try {
-        let req = await fetch(url);
-        if(req.status === 200) {
-            let res = await req.text();
-            document.getElementById('thesavelink').innerHTML = res;
-        }
-    } catch (error) {
-        console.log(error)
-    }
-}
-
-fetchSaveLink()
-function showside() {
-    let saveLink = document.getElementById('saveid');
-    if (saveLink.style.display === "none") {
-        saveLink.style.display = "block"
-    } else {
-        saveLink.style.display = "none"
-    }
-}
-
 function checkforid() {
     let characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
     let result = '';
@@ -80,6 +43,44 @@ function checkforid() {
 
     sendLink()
 }
+
+async function count() {
+    let url = 'https://corsproxy.io/?https://linq.pxxl.space';
+
+    try {
+        let res = await fetch(url);
+        let req = await res.text()
+        document.getElementById('thecount').innerHTML = req;
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+count()
+
+async function fetchSaveLink() {
+    let url =  `https://corsproxy.io/?https://linq.pxxl.space/save.php?linq=${linqId}`;
+    try {
+        let req = await fetch(url);
+        if(req.status === 200) {
+            let res = await req.text();
+            document.getElementById('thesavelink').innerHTML = res;
+        }
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+fetchSaveLink()
+function showside() {
+    let saveLink = document.getElementById('saveid');
+    if (saveLink.style.display === "none") {
+        saveLink.style.display = "block"
+    } else {
+        saveLink.style.display = "none"
+    }
+}
+
 
 function linqBuild() {
     let linkName = document.getElementById("Name").value;
