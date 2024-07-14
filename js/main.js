@@ -110,6 +110,7 @@ function linqBuild() {
                     if (res.status == 200) {
                         let req = await res.text()
                         let build = JSON.parse(req)
+                        document.getElementById('clip').disabled = false
                         err.innerHTML = build.link
                         err.classList.add('done')
                         document.getElementById('turn').style.display = 'none'
