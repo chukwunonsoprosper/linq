@@ -93,6 +93,7 @@ function linqBuild() {
 
     try {
         if (linkName == '' && defaultLink == '') { throw 'an error has occur, try checking the input' }
+        if( linkName == '') {throw 'link name cannot be blank'}
         let pattern = /\s/;
         if(defaultLink == 'https://') {throw 'provide a link'}
         if (linkName.match(pattern)) { throw "don't include space in the new link" }
